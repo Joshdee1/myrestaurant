@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+    <title>About us</title>
+</head>
+
+<style>
+
+
+
+
+
+
+#table{
+    height: 100px;
+    width: 140px;
+    display: block;
+    margin: auto;
+    margin-bottom: 3px;
+    margin-top: 8px;
+    border-radius: 30%;
+}
+
+
+.container{
+    background-image: url('foods.jpg');
+    background-size: 100% 100%;
+    height: 100%;
+    font-family: 'merriweather', serif;
+    font-family: 'roboto', sans-serif;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    padding-left: 50px;
+   
+}
+
+
+nav{
+    display: flex;
+    flex-direction: column;
+    height: 28vh;
+    width: 100vw;
+ background-color: black;
+ font-family:'ubuntu mono', monospace;
+ margin-top: 10px;
+ border: 2px solid white;
+ border-bottom-left-radius: 100px;
+ border-bottom-right-radius: 100px;
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+ 
+}
+
+.lists{
+    display: flex;
+    justify-content: center;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.lists li{
+    list-style: none;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.lists li a{
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+}
+
+.lists li a:hover{
+    background-color: rgb(17, 0, 255);
+    border-radius: 10px;
+    
+}
+
+
+/* second heading */
+.header{
+    text-align: center;
+    font-size: 1.8rem;
+   
+}
+.header{
+ color: rgb(238, 255, 0);
+ }
+
+
+ img{
+    width: 150px;
+    height: 150px;
+ }
+ .lists-items li{
+    color: rgb(243, 239, 18);
+    font-family: cursive;
+  font-weight: bolder;
+ }
+
+ footer{
+    color: gray;
+    text-align: center;
+}
+
+@media only screen and (max-width:500px){
+    nav{
+border-radius: 0%;
+font-size: 12pt;
+height: 150px;
+}
+
+#table{
+    height: 100px;
+     justify-content: center;
+}
+
+.container{
+    font-family: 'merriweather', serif;
+    color: rgb(255, 255, 255);
+    padding-left: 0;
+    background-size: 100%;
+    width: 100vw;
+}
+body{
+    background-color: black;
+}
+
+.container > *{
+    color: rgb(255, 255, 255);
+    font-size: 15pt;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.lists li{
+                margin: 5px;
+            }
+
+            .second-image, .first-image, .fourth-image, .third-image{
+                object-fit: cover;
+            }
+
+            .about, h2{
+                text-align: center;
+            }
+
+            .lists li{
+    list-style: none;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+
+.lists{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.items{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+
+
+
+}
+</style>
+
+<body>
+  
+
+    
+    <nav >
+        <img src="table.jpg" id="table">
+        <ul class="lists">
+            <li>
+                <a href="Home.html">Home</a>
+            </li>
+    
+ 
+        <li>
+            <a href="about.html">About</a>
+        </li>
+    
+    
+    <li>
+        <a href="contact.html">Contact</a>
+    </li>
+</ul>
+</nav>
+<div class="container">
+    <div class="header">
+    <header>Hello, there!!.</header>
+</div>
+
+<div class="first-para">
+    <h2>Amazing facts about goodnews Restaurant</h2>
+        <ul class="lists-items">
+            <li>Get 50% discount on your first visit </li>
+            <li>There is adequate food at cheap prices</li>
+            <li>The CEO of the Restaurant is owned by a boy</li>
+            <br>
+            And so much more!!.
+        </ul>
+    
+</div>
+
+
+    <p class="about">This website is for the advertising of our foods such as; 
+        
+    </p>
+    <ul >
+        <li>chicken</li>
+        <img src="chicken.jpg">
+        <li>Fried chicken</li>
+        <img src="fried-chicken.jpg">
+        <li>salad</li>
+        <img src="salad.jpg">
+        <br>
+        and so much more
+    </ul>
+
+    </div>
+
+    <footer>
+        <p>Copyright reserved 2022-2023 Goodnews Foodshop
+            <br>
+            All rights are reserved!
+        </p>
+    </footer>
+
+</body>
+</html>

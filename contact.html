@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF_8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+
+    <style>
+
+#table{
+    height: 100px;
+    width: 140px;
+    display: block;
+    margin: auto;
+    margin-bottom: 3px;
+    margin-top: 8px;
+    border-radius: 30%;
+}
+
+ nav{
+    display: flex;
+    flex-direction: column;
+    height: 27vh;
+    width: 100vw;
+ background-color: black;
+ font-family:'ubuntu mono', monospace;
+ margin-top: 10px;
+ border: 2px solid white;
+ border-bottom-left-radius: 100px;
+ border-bottom-right-radius: 100px;
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+ 
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+ul li{
+    list-style: none;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+}
+
+ul li a:hover{
+    background-color: rgb(17, 0, 255);
+    border-radius: 10px;
+    
+}
+        
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+background-color: gray
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+form{
+    padding: 10px 20px;
+    background-image: url('table.jpg');
+    background-size: 100%;
+    height: 80vh;
+    width: 450px;
+    color: white;
+    
+}
+
+
+form > *{
+    margin: 5px;
+    
+}
+
+select{
+    border-radius: 5px;
+    width: 450px;
+    height: 26px;
+}
+.name, .email, .phone-number{
+    border-radius: 5px;
+    width: 450px;
+    height: 25px;
+}
+
+
+
+
+#question{
+color: rgb(251, 255, 0);
+}
+
+.submit, .reset{
+margin: 0px;
+padding: 0px;
+margin-bottom: 20px;
+}
+
+footer{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+@media only screen and (max-width:500px){
+
+   nav{
+            border-radius: 0%;
+            height: 150px;
+            font-size: 12pt;
+   }
+
+            ul li{
+                margin: 5px;
+            }
+
+            .form{
+                margin: 0px;
+
+            }
+      
+            select{
+    border-radius: 5px;
+    width: 210px;
+    height: 21px;
+     }
+
+.name, .email, .phone-number{
+    border-radius: 5px;
+    width: 210px;
+    height: 21px;
+    }
+
+    textarea{
+        width: 210px;
+        height: 100px;
+        background-color: black;
+        color: white;
+    }
+
+    
+
+    form{
+    padding: 10px 20px;
+    background-image: url('table.jpg');
+    background-size: 100%;
+    height: 69vh;
+    width: auto;
+    color: white;
+    
+}
+body{
+    background-color: black;
+}
+
+
+}
+
+        @media only screen and (min-width:501px){
+             .container{
+                display: flex;
+                justify-content: space-evenly;
+                height: 80vh;
+                width: 100%;
+            }
+
+        }
+    </style>
+
+
+    </head>
+   <body>
+    <nav >
+            <img src="table.jpg" id="table">
+            <ul >
+                <li>
+                    <a href="Home.html">Home</a>
+                </li>
+        
+     
+            <li>
+                <a href="about.html">About</a>
+            </li>
+        
+        
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+</ul>
+</nav>
+
+<hr>
+
+<header>
+    <h1>Contact us</h1> 
+ </header>
+ <div class="container">
+    <div>
+<form action="Feedback.html">
+<label>Type of Query</label>
+<br>
+<select class=" Inputs" required>
+ <option value="sel" selected>select</option>
+ <option value="res" >Low responsiveness</option>
+ <option value="ord" >Order  related issues </option>
+ <option value="site" >Site  related issues </option>
+</select>
+<br>
+
+<label>Name</label>
+<br>
+<input type="text" placeholder="Input your name..." class="name" required>
+
+<br>
+<label>Email</label>
+<br>
+<input type="email" placeholder="Input your email..." class="email" required>
+
+<br>
+<label>Phone number</label>
+<br>
+<input type="number" placeholder="Input your phone number..." class="phone-number" required>
+<br>
+<label id="question">Are you a member of foodshop?  </label>
+<input type="radio" name="check">Yes</label>
+
+<input type="radio" name="check">No</label><br>
+
+   <br>
+<label name="messg">Ellaborate your query</label>
+<br>
+<textarea name="messg" rows="10" cols="30"></textarea>
+<br>
+<input type="submit" class="submit">
+<input type="reset" class="reset">
+</form>
+</div>
+</div>
+<br><br>
+<br>
+
+<footer>
+    <p>Copyright reserved 2022-2023 Goodnews Foodshop
+        <br>
+        All rights are reserved!
+    </p>
+</footer>
+   </body>
+
+</html>
